@@ -6,10 +6,10 @@
     height="250"
     class="logo"
   />
-  <h1 class="app-title">Todo List Using Angular</h1>
+  <h1 class="app-title">To-do List Using Angular</h1>
 </div>
 <div class="container">
-  Add a todo...
+  Add a to-do...
   <br />
   <input
     type="text"
@@ -18,7 +18,7 @@
     [(ngModel)]="todoValue"
     (keyup.enter)="addItem()"
   />
-  <button class="add-btn" (click)="addItem()">Add Todo</button>
+  <button class="add-btn" (click)="addItem()">Add To-do</button>
   <div class="list">
     <ul>
       <li *ngFor="let item of list">
